@@ -1,0 +1,30 @@
+{
+  "Air": {
+    "description": "",
+    "adjustment": []
+  },
+  "Earth": {
+    "description": "",
+    "adjustment": []
+  },
+  "Fire": {
+    "description": "",
+    "adjustment": []
+  },
+  "Ice": {
+    "description": "",
+    "adjustment": []
+  },
+  "Lightning": {
+    "description": "",
+    "adjustment": []
+  },
+  "Magma": {
+    "description": "",
+    "adjustment": []
+  },
+  "Water": {
+    "description": "",
+    "adjustment": []
+  }
+}

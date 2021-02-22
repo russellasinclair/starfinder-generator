@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alien Architect for Starfinder</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="regBody">
+
+<h1 style="text-align:center">Alien Architect</h1>
+<h3 style="text-align:center">For Starfinder</h3>
+
+<form id="regForm" action="">
+    <!-- One "tab" for each step in the form: -->
+    <div class="tab">
+        <p><b>Select Array:</b></p>
+        <p><select oninput="data.npcData.npcArray = this.value">
+            <option value="">Select an array.</option>
+            <option>Combatant</option>
+            <option>Expert</option>
+            <option>Spellcaster</option>
+        </select></p>
+        <p><b>Select CR:</b></p>
+        <select  oninput="data.npcData.npcCR = this.value">
+            <option value="">Select a CR.</option>
+            <option>1/3</option>
+            <option>1/2</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+        </select><p>
+        Determine whether your NPC is a combatant, an expert, or a
+        spellcaster, and use the appropriate array tables to determine
+        the NPC’s starting statistics</p>
+    </div>
+
+    <div class="tab">
+        <p><b>Creature Type Graft:</b></p>
+        <p><select id="type-dropdown" name="type" oninput="this.className = ''"></select></p>
+        <p>The first graft—a set of adjustments—you apply to your NPC
+            gives it attributes that reflect the base kind of creature it is,
+            such as animal, humanoid, or undead. This and other grafts
+            give new abilities and possibly adjust the numbers from the
+            NPC’s array. If you give an NPC a class graft (see Step 4), some
+            of the adjustments from its class graft can be superseded by
+            ones granted by its creature type graft.</p>
+        <p><b>Creature Subtype Graft:</b></p>
+        <p><select id="subtype-dropdown" name="subtype" oninput="this.className = ''">
+        </select></p><p>If the NPC has any subtypes, add those now. Many subtypes
+        don’t grant additional abilities, but they are important for
+        interactions with other rules.</p>
+    </div>
+
+    <div class="tab">
+        <p><b>Creature Class Graft (optional):</b></p>
+        <p><select id="class-graft-dropdown" name="class-graft" oninput="this.className = ''">
+        </select></p><p>If you’re making an NPC who functions as a character with
+        a class, you can give it a class graft. The class graft gives
+        it abilities based on the relevant class’s abilities, but which
+        abilities the NPC gains is determined by its CR rather than by
+        a class level. Some class graft adjustments can replace ones
+        from its creature type graft (see Step 2).</p>
+        <p><b>Creature Template Graft (optional):</b></p>
+        <p><select id="template-graft-dropdown" name = "template-graft" oninput="this.className = ''">
+        </select></p><p>If you would like the NPC to have a template, apply it now.</p>
+    </div>
+
+    <div class="tab">
+        <p><b>Special Abilities:</b></p>
+        <p><select oninput="this.className = ''"> </select></p><p>
+        In this step, give your NPC a number of appropriate special
+        abilities, as given in its array. Some abilities are combat tricks,
+        while other adjustments might switch up its basic statistics.
+        A few abilities can be given to an NPC for free.</p>
+    </div>
+
+    <div class="tab">
+        <p><b>Skills:</b></p>
+        <p><select oninput="this.className = ''"> </select></p><p>
+        Your NPC’s array (and possibly a graft or special ability you
+        give it) determines its bonuses for skills it has mastered or
+        is better than average at using. Pick the specific skills and
+        determine the bonus for each now.</p>
+    </div>
+
+    <div class="tab">
+        <p><b>Spells:</b></p>
+        <p><select oninput="this.className = ''"> </select></p><p>
+        If your NPC can cast spells, choose them now. Usually only
+        spellcasters or creatures with spell-like abilities need this step.</p>
+    </div>
+
+    <div class="tab">
+        <p><b>Character:</b></p>
+
+    </p>
+    </div>
+
+
+
+    <div style="overflow:auto;">
+        <div style="float:right;">
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+    </div>
+
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+    </div>
+
+</form>
+<script src="./js/arrays.js"></script>
+<script src="./js/sizeChart.js"></script>
+<script src="./js/xp.js"></script>
+<script src="./js/alien.js"></script>
+<script src="./js/pageRunner.js"></script>
+</body>
+</html>

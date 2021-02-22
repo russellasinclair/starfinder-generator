@@ -1,0 +1,117 @@
+{
+  "N/A": {},
+  "Android": {
+    "description": "(android species, it also gains the constructed, flat affect, and upgrade slot racial traits.)"
+  },
+  "Brenneri": {
+    "description": "brenneri species (page 8, AA3), it also gains the favored object and hold breath racial traits"
+  },
+  "Damai": {
+    "description": "gains the scrappy racial trait and Stealth and Survival as master skills"
+  },
+  "Dessamar": {
+    "description": "(Dessamar Imago or Dessamar Instar), it can use the following spells as spell-like abilities: 1/day—charm person; at will—detect magic and telepathic message. A dessamar imago has a land speed of 20 feet and an extraordinary fly speed of 20 feet with average maneuverability, as well as the fragile limbs and twinkle racial traits. A dessamar instar has a land speed of 30 feet and a climb speed of 30 feet, and a +2 racial bonus to KAC and saving throws against any effect that forces them to move or knocks them prone. An instar also has the dream dust and poor vision racial traits."
+  },
+  "Dirindi": {
+    "description": "gains the electrical affinity racial trait and Diplomacy and Perception as master skills."
+  },
+  "Dwarf": {
+    "description": "gains the slow but steady, stonecunning, traditional enemies, and weapon familiarity racial traits."
+  },
+  "Drow": {
+    "description": "drow species, it gains darkvision 60 ft. instead of low-light vision, as well as the drow immunities, drow magic, and light blindness racial traits"
+  },
+  "Elf": {
+    "description": "elven species, it gains the elven immunities and elven magic racial traits and Mysticism as a master skill; "
+  },
+  "Half-Elf": {
+    "description": "half-elven species, it gains the elven blood racial trait and an extra good skill."
+  },
+  "Espraksa": {
+    "description": "espraksa species, it takes a –2 penalty to saving throws against mind-affecting effects, has a land speed of 30 feet and an extraordinary fly speed of 30 feet with average maneuverability, and gains the cold inured and snatch racial traits and the natural weapons (P) universal creature rule. An espraksa also gains Diplomacy and Sense Motive as good skills (although many espraksas have Sense Motive as a master skill)."
+  },
+  "Gnome": {
+    "description": "gnome species it also gains the eternal hope and gnome magic racial traits and Culture as a master skill."
+  },
+  "Gray": {
+    "description": "gray species, it also gains telepathy 100 ft. and the phase special ability."
+  },
+  "Hobgoblin": {
+    "description": "hobgoblin species, it also gains the battle hardened racial trait and Intimidate and Stealth as master skills"
+  },
+  "Kanobo": {
+    "description": "kanabo (goblinoid) species, it gains the armor savant and kanabo magic racial traits."
+  },
+  "Halfling": {
+    "description": "halfling species, it gains the halfling luck and sneaky racial traits, Perception and Stealth as master skills, and Acrobatics and Athletics as good skills."
+  },
+  "Human": {
+    "description": "human species, it gains an additional special ability of any type and an additional good skill."
+  },
+  "Ikeshti": {
+    "description": "ikeshti species, it also gains the desert survivor, shed skin, and squirt blood racial traits."
+  },
+  "Kasatha": {
+    "description": "kasatha species, it gains the desert stride and four-armed racial traits, Acrobatics and Athletics as master skills, and Culture as a good skill."
+  },
+  "Khizar": {
+    "description": "khizar species, it also gains the carbonic respiration, evergreen, and limited telepathy (including communication with non-mindless creatures of the plant type) racial traits, and gains Life Science and Survival as good skills."
+  },
+  "Lashunta": {
+    "description": "lashunta species, it gains the limited telepathy racial trait and can cast the following spells as spell-like abilities: 1/day—detect thoughts; at will—daze and psychokinetic hand."
+  },
+  "Maraquoi": {
+    "description": "if the NPC is of the maraquoi species, it also gains blindsense (sound) 30 ft., a climb speed of 20 ft., the prehensile tail racial trait, and Survival as a master skill."
+  },
+  "Orc": {
+    "description": "if the creature is of the half-orc species, it also gains Intimidate and Survival as master skills."
+  },
+  "Pathra": {
+    "description": "pahtra species, it also gains the nimble and wary racial traits, Acrobatics as a master skill, and Stealth as a master skill."
+  },
+  "Phentomite": {
+    "description": "phentomite species, it also gains the acclimated and heat tracking special abilities and Acrobatics and Athletics as master skills"
+  },
+  "Reptoid": {
+    "description": "if the NPC is of the reptoid species, it also gains the change shape, cold-blooded, and natural weapons racial traits."
+  },
+  "Ryphorian": {
+    "description": "if the NPC is of the ryphorian species, it also gains an additional special ability of any type, the trimorphic racial trait, and Perception as a master skill."
+  },
+  "Sarcesian": {
+    "description": "sarcesian species, it also gains the void flyer special ability and an additional good skill."
+  },
+  "Shakalta": {
+    "description": "the shakalta species, it has immunity to disease and poison, as well as void adaptation. It also has the aura of light, bonded souls, psychic shunt, shakalta telepathy, and starlight sustenance racial traits. A shakalta can use the following spells as spell-like abilities: at will—dancing lights and energy ray (electricity or fire only)."
+  },
+  "Shatori": {
+    "description": "the shatori species, it has the Boneyard conditioning, psychometry, and shared stillness racial traits. A shatori can use the following spells as spell-like abilities: at will—detect magic, grave words, and stabilize."
+  },
+  "Shimreen": {
+    "description": "the shimreen species, it gains resistance 5 to electricity and the amplify, radiant, and shift limb racial traits."
+  },
+  "Shirren": {
+    "description": "shirren species, it also gains the communalism and limited telepathy racial traits and Culture and Diplomacy as good skills."
+  },
+  "Skittermander": {
+    "description": "skittermander species, it also gains the grappler, hyper, and six-armed racial traits. If the NPC is of the stridermander species, it also gains the camouflage, feeding tendril, and gorge racial traits."
+  },
+  "Strix": {
+    "description": "strix species, it also gains the strix mobility, suspicious, and tinkerer racial traits, and gains Perception as a master skill and Stealth as a good skill."
+  },
+  "Verthani": {
+    "description": "verthani species, it also gains the easily augmented and skin mimic racial traits and an additional good skill."
+  },
+  "Vesk": {
+    "description": "vesk species, it also gains the armor savant, fearless, and natural weapons racial traits."
+  },
+  "Vlaka": {
+    "description": "vlaka species, it also gains the buoy, cooperative, versed, and vlakan senses racial traits and Perception and Sense Motive as master skills."
+  },
+  "Ysoki": {
+    "description": "ysoki species, it also gains the cheek pouches and moxie racial traits, Engineering and Stealth as master skills, and Survival as a good skill."
+  },
+  "Kitsune": {
+    "description": "kitsune species, it also gains Acrobatics and Athletics as master skills and Disguise as a bonus good skill."
+  }
+}

@@ -1,0 +1,875 @@
+{
+  "Aeon": {
+    "description": "Aeons are a species of neutral outsiders who maintain the balance of reality.",
+    "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 133",
+    "adjustment": [
+      {
+        "npcImmunities": "Immunity to cold, critical hits, and poison"
+      },
+      {
+        "npcResistances": "Resistance 10 to electricity and fire"
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Envisaging (Su)": "Aeons communicate without language, first scanning beings for their thoughts and intentions and then projecting psychic flashes of a single concept in response. These flashes are usually a combination of visual and aural stimulation that communicate the aeon’s intent or understanding. An aeon’s envisaging functions as a nonverbal form of telepathy with a range of 100 feet, and it counts as a language for the purposes of telepathy and truespeech. Aeons can’t read the thoughts of creatures immune to mind-affecting effects."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Extension of All (Ex)": "Aeons can communicate telepathically with other aeons over vast distances. This ability works even across planes, albeit less effectively, allowing the communication of only vague impressions and feelings."
+        }
+      }
+    ]
+  },
+  "Aanung-an": {
+    "description": "Any creature that dies while performing dark rituals for evil purposes risks rising again as one of the occult dead. (Suggested Array: Spellcaster. Suggested Ability Scores: Intelligence, Wisdom, Charisma)",
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Ritual Scar (Su)": "An aanung-an that starts its turn grappling a creature can attempt to carve a ritual scar into its victim’s body as a standard action, afflicting it with potent magic. The aanung-an attempts a Mysticism check (DC = 20 + target’s level or CR). On a success, the aanung-an renews the grapple, and the target takes 1d6+4 slashing damage as the aanung-an claws a symbol into its body. The target must then succeed at a DC 15 Will saving throw or suffer one of the following effects of the aanung-an’s choice: bestow curse, slow, or suggestion. These effects function at the aanung-an’s caster level. Certain aanung-ans might inflict different or unique effects with this ability, at the GM’s discretion."
+        }
+      }
+    ],
+    "requires": [
+      {
+        "npcType": "Undead"
+      }
+    ],
+    "reference": "Starfinder #25: The Chimera Mystery pg. 55",
+    "adjustment": [
+      {
+        "npcSenses": "Blindsense (thought) 30 ft."
+      }
+    ],
+    "masterSkills": [
+      "npcMyst"
+    ]
+  },
+  "Agathion": {
+    "description": "Agathions are celestials, or good outsiders, native to Nirvana.",
+    "reference": "Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision"
+      },
+      {
+        "npcSaveBonus": "+4 to saving throws against poison"
+      },
+      {
+        "npcImmunities": "electricity; petrification"
+      },
+      {
+        "npcResistances": "resistance 10 to cold and sonic"
+      },
+      {
+        "npcOtherAbilities": "healing channel (as per the healer mystic connection power); truespeech; speak with animals (as per the xenodruid mystic connection power)"
+      }
+    ]
+  },
+  "Air": {
+    "description": "This subtype is usually applied to outsiders with a connection to the Plane of Air.",
+    "reference": "Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Flight (Perfect Maneuverability)"
+      }
+    ],
+    "masterSkills": [
+      "npcAthl"
+    ]
+  },
+  "Android": {
+    "description": "This subtype is applied to androids and creatures related to androids. (see species)",
+    "reference": "Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision; Darkvision 60 ft."
+      }
+    ]
+  },
+  "Angel": {
+    "description": "Angels are celestials, or good outsiders, native to the good-aligned Outer Planes.",
+    "reference": "Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision; Darkvision 60 ft."
+      },
+      {
+        "npcImmunities": "immunity to acid, cold, and petrification"
+      },
+      {
+        "npcResistances": "resistance 10 to electricity and fire"
+      },
+      {
+        "npcOtherAbilities": "truespeech"
+      },
+      {
+        "npcSaveBonus": " +4 to saving throws against poison"
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Protective Aura (Su)": "For angels of CR 3 to CR 15, this ability grants creatures within the aura (usually 20 feet), including the angel, a divine bonus (usually +2) to AC against attacks made by evil creatures and a divine bonus (usually +4) to saving throws against effects created by evil creatures. The protective aura of a more powerful or a weaker angel might grant a larger or smaller bonus and have a larger or smaller radius, respectively."
+        }
+      }
+    ]
+  },
+  "Aquatic": {
+    "description": "These creatures are often native to environments that are mostly or entirely underwater. (if it can breathe air, it also gains the amphibious universal creature rule.)",
+    "reference": "Alien Archive 3 pg. 148, Alien Archive pg. 134",
+    "adjustment": [],
+    "masterSkills": [
+      "npcAthl"
+    ]
+  },
+  "Archon": {
+    "description": "Archons are celestials, or good outsiders, native to Heaven. ( many archons can cast teleport as an at-will spell-like ability (caster level equal to its CR))",
+    "reference": "Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision; Darkvision 60 ft."
+      },
+      {
+        "npcSaveBonus": "+4 to saving throws against poison"
+      },
+      {
+        "npcImmunities": "immunity to electricity and petrification"
+      },
+      {
+        "npcResistances": "resistance 10 to cold and fire"
+      },
+      {
+        "npcOtherAbilities": "truespeech"
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Aura of Menace (Su)": "This ability imposes a divine penalty (usually –2) to the AC, attacks, and saving throws of each hostile creature within the aura (usually 20 feet) that fails a Will save. This penalty lasts for 24 hours or until that creature deals damage to the archon who generated the aura. A creature that has resisted or broken the effect can’t be affected again by the same archon’s aura for 24 hours. The aura of a more powerful or weaker archon might impose a larger or smaller penalty and might have a larger or smaller radius, respectively."
+        }
+      }
+    ]
+  },
+  "Azata": {
+    "description": "Azatas are celestials, or good outsiders, native to Elysium.",
+    "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision; Darkvision 60 ft."
+      },
+      {
+        "npcImmunities": "immunity to electricity and petrification"
+      },
+      {
+        "npcOtherAbilities": "truespeech"
+      }
+    ]
+  },
+  "Brenneri": {
+    "description": "This subtype is applied to brenneris and creatures related to brenneris. (see species)",
+    "reference": "Alien Archive 3 pg. 148",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft."
+      },
+      {
+        "npcOtherAbilities": "swim speed"
+      }
+    ],
+    "masterSkills": [
+      "npcSens",
+      "npcDipl"
+    ]
+  },
+  "Cold": {
+    "description": "Creatures with this subtype are usually native to frigid environments.",
+    "reference": " Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcImmunities": "immunity to cold"
+      },
+      {
+        "npcWeaknesses": "vulnerable to fire"
+      }
+    ]
+  },
+  "Daemon": {
+    "description": "Daemons are fiends, or evil outsiders, native to Abaddon.",
+    "reference": "Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcResistances": "resistance 10 to cold, electricity, and fire"
+      },
+      {
+        "npcImmunities": "iImmunity to acid, death effects, disease, and poison"
+      },
+      {
+        "npcOtherAbilities": "gains ability to summon allies; telepathy"
+      }
+    ]
+  },
+  "Damai": {
+    "description": "This subtype is applied to damais and creatures related to damais. (see species)",
+    "reference": "Alien Archive 2 pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft."
+      }
+    ]
+  },
+  "Demon": {
+    "description": "Demons are fiends, or evil outsiders, native to the Abyss.",
+    "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcResistances": "resistance 10 to acid, cold, and fire"
+      },
+      {
+        "npcImmunities": "Immunity to electricity and poison"
+      },
+      {
+        "npcOtherAbilities": "summon allies; telepathy 100 ft."
+      }
+    ]
+  },
+  "Dessamar": {
+    "description": "This subtype is applied to dessamars and creatures related to dessamars. (see species)",
+    "reference": "Source Alien Archive 3 pg. 148",
+    "adjustment": [
+      {
+        "npcSenses": "Blindsense (scent) 30 ft., low-light vision"
+      }
+    ]
+  },
+  "Devil": {
+    "description": "Devils are fiends, or evil outsiders, native to Hell.",
+    "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 134",
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "See in darkness;": "The creature can see perfectly in darkness of any kind, including magical darkness."
+        }
+      }
+    ],
+    "adjustment": [
+      {
+        "npcResistances": "resistance 10 to acid and cold"
+      },
+      {
+        "npcImmunities": "immunity to fire and poison"
+      },
+      {
+        "npcOtherAbilities": "summon allies; telepathy 100 ft."
+      },
+      {
+        "npcSenses": "See in Darkness"
+      }
+    ]
+  },
+  "Dirindi": {
+    "description": "This subtype is applied to dirindis and creatures related to dirindis. (see species)",
+    "reference": "Alien Archive 3 pg. 148",
+    "adjustment": [
+      {
+        "npcSenses": "Blindsight (electricity) 60 ft., low-light vision"
+      }
+    ]
+  },
+  "Dwarf": {
+    "description": "This subtype is applied to dwarves and creatures related to dwarves. (see species)",
+    "reference": "Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft."
+      }
+    ]
+  },
+  "Earth": {
+    "description": "This subtype is usually applied to outsiders with a connection to the Plane of Earth.",
+    "reference": "Alien Archive 3 pg. 148, Alien Archive pg. 134, Alien Archive 2 pg. 136",
+    "trait": [],
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Burrow speed"
+      },
+      {
+        "npcSenses": "blindsense or blindsight (vibration) with a varied range"
+      }
+    ]
+  },
+  "Elemental": {
+    "description": "An elemental is a creature composed entirely of matter from one of the four Elemental Planes.",
+    "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 134",
+    "adjustment": [
+      {
+        "npcImmunities": "Elemental immunities"
+      }
+    ]
+  },
+  "Elf": {
+    "description": "This subtype is applied to elves and creatures related to elves. (See Species)",
+    "reference": "Alien Archive pg. 135",
+    "trait": [],
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision"
+      }
+    ],
+    "masterSkills": [
+      "npcPerc"
+    ]
+  },
+  "Espraksa": {
+    "description": "This subtype is applied to espraksas and creatures related to espraksas. (see species)",
+    "reference": "Alien Archive 3 pg. 148"
+  },
+  "Extraplanar": {
+    "description": "This subtype is applied to any creature when it is on a plane other than its native plane. A creature that travels the planes can gain or lose this subtype as it goes from plane to plane. Creature entries assume that encounters with those creatures take place on the Material Plane.",
+    "reference": "Alien Archive 3 pg. 148"
+  },
+  "Fire": {
+    "description": "This subtype is usually applied to outsiders with a connection to the Plane of Fire and creatures with a strong affinity to fire.",
+    "reference": " Alien Archive 3 pg. 148, Alien Archive 2 pg. 136, Alien Archive pg. 135",
+    "adjustment": [
+      {
+        "npcImmunities": "Immunity to fire"
+      },
+      {
+        "npcWeaknesses": "vulnerable to cold"
+      }
+    ]
+  },
+  "Giant": {
+    "description": "This subtype is applied to giants and creatures related to giants. ",
+    "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 135",
+    "adjustment": [
+      {
+        "npcSenses": "low-light vision"
+      }
+    ],
+    "masterSkills": [
+      "npcInti",
+      "npcPerc"
+    ]
+  },
+  "Gnome": {
+    "description": "This subtype is applied to gnomes and creatures related to gnomes. (see species)",
+    "reference": "Alien Archive pg. 135",
+    "adjustment": [
+      {
+        "npcSenses": "low-light vision"
+      }
+    ]
+  },
+  "Goblinoid": {
+    "description": "This subtype is applied to humanoids of various goblinoid subspecies, such as hobgoblins. (see species)",
+    "reference": "Alien Archive 2 pg. 136, Alien Archive pg. 135",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft."
+      }
+    ]
+  },
+  "Gray": {
+    "description": "This subtype is applied to the humanoid aliens known as grays and creatures related to grays. (see species)",
+    "reference": "Alien Archive pg. 135",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft."
+      }
+    ]
+  },
+  "Halfling": {
+    "description": "This subtype is applied to halflings and creatures related to halflings. (see species)",
+    "reference": " Alien Archive pg. 135"
+  },
+  "Human": {
+    "description": "This subtype is applied to humans and creatures related to humans. ",
+    "reference": "Alien Archive pg. 135"
+  },
+  "Ikeshti": {
+    "description": "This subtype is applied to ikeshtis and creatures related to ikeshtis.",
+    "reference": "Alien Archive pg. 135",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Climb Speed"
+      }
+    ]
+  },
+  "Incorporeal": {
+    "description": "Creatures with this subtype have no physical bodies.",
+    "reference": "Alien Archive 3 pg. 148, Alien Archive pg. 135, Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Incorporeal"
+      }
+    ]
+  },
+  "Inevitable": {
+    "description": "Inevitables are construct-like outsiders built to enforce the laws of the universe.",
+    "reference": "Alien Archive pg. 135",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft.; low-light vision"
+      },
+      {
+        "npcOtherAbilities": "constructed; regeneration (suppressed by chaotic-aligned attacks); truespeech."
+      }
+    ]
+  },
+  "Kami": {
+    "description": "Kami are native outsiders that protect animals, plants, objects, and locations, which the kami call their “wards.” Kami have no need to drink, eat, or sleep.",
+    "reference": "Alien Archive 3 pg. 148",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Fast Healing (See Below); telepathy 100 ft.; no breath; merge with ward (see below); some kami gain other abilities from having specific wards."
+      },
+      {
+        "npcImmunities": "immunity to bleed, mind-affecting effects, petrification, and polymorph"
+      },
+      {
+        "npcSenses": "Darkvision 60 ft., low-light vision"
+      },
+      {
+        "npcResistances": "resistance 10 to acid, electricity, and fire;"
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Merge with Ward (Su)": "A kami has a specific ward—a creature with an Intelligence of –4 or lower, an object, or a location—listed in parentheses in the kami’s stat block. As a full action, a kami adjacent to its ward can merge body and mind with that ward. While merged, the kami can observe the surrounding region with its senses as if it were using its own body, as well as via any senses its ward might have. Typically, this trait allows a kami no control over its ward, although some kami (such as the tsukumogami) are exceptions. If the kami has no control over its ward, it can take no actions while merged other than to emerge from its ward as an action. The kami can emerge adjacent to the ward, provided the kami’s body is at least one size smaller than the ward. If the ward is a location, the kami can emerge at any point within that location. If the ward is destroyed while a kami is merged with it, the kami dies. If the ward is destroyed while the kami is not merged with it, the kami loses its merge with ward and fast healing traits, and the kami becomes sickened. It can take on a new ward by spending 7 days doing so, and it regains its traits and loses the sickened condition once it does.  Some kami have additional abilities and limitations relative to their wards."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Fast Healing (Ex):": "A kami within 120 feet of or merged with its ward has fast healing. A kami of CR 10 or lower has fast healing 5, while one of CR 11 or higher has fast healing 10."
+        }
+      }
+    ]
+  },
+  "Kasatha": {
+    "description": "This subtype is applied to kasathas and creatures related to kasathas. (see species)",
+    "reference": "Alien Archive pg. 136"
+  },
+  "Khizar": {
+    "description": "This subtype is applied to khizars and creatures related to khizars. (see species)",
+    "reference": "Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Blindsense (vibration) 30 ft., blindsight (life) 30 ft."
+      }
+    ]
+  },
+  "Lashunta": {
+    "description": "This subtype is applied to lashuntas and creatures related to lashuntas. (see species)",
+    "reference": "Alien Archive pg. 136"
+  },
+  "Maraquoi": {
+    "description": "This subtype is applied to maraquoi and creatures related to maraquoi. (see Species)",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision;"
+      }
+    ]
+  },
+  "Mindscape": {
+    "description": "Use the following template graft to create a mindscape creature based on any existing creature, or to make a new creation unique to a mindscape.",
+    "reference": "Starfinder #23: Hive of Minds pg. 56",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Formless demise, mindscape dependency, mindscape simulacrum, semi-mindless."
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Formless Demise (Su)": "A slain mindscape creature disappears in a brief explosion of psychic shards. Each non-mindscape creature within 10 feet of a slain mindscape creature must succeed at a Will save or be staggered for 1 round."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Mindscape Dependency (Su)": "A mindscape creature can exist only within the mindscape in which it was created. It cannot survive outside, and it dies if it is forcibly removed from the mindscape, but the mindscape usually recreates it 1d4 rounds later."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Mindscape Simulacrum (Su)": "A mindscape creature retains its original creature type, but while it is within its mindscape, it also counts as an outsider with the native subtype for the purposes of spells or effects that target it."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Semi-Mindless (Ex)": "A mindscape creature gains a +4 bonus to saves against mind-affecting effects. A mindscape creature with the confused condition that rolls an “act normally” result must roll again and use the second result."
+        }
+      }
+    ]
+  },
+  "Native": {
+    "description": "Creatures that have this subtype are outsiders native to the Material Plane. They can be returned to life (such as with the raise dead or mystic cure spells), just as other living creatures can be.",
+    "reference": "Alien Archive 3 pg. 149"
+  },
+  "Oni": {
+    "description": "Oni are evil spirits that take humanoid form to become native outsiders. (Oni gain the humanoid subtype graft of the species associated with their physical form. For example, a ja noi oni takes the form of a hobgoblin and therefore gains the goblinoid subtype graft, even though it is not a humanoid or a member of the hobgoblin species. Oni also gain the shapechanger subtype graft, with their change shape ability generally limited to humanoids of similar size.)",
+    "reference": "Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft.; low-light vision"
+      },
+      {
+        "npcOtherAbilities": "regeneration (suppressed by acid or fire"
+      }
+    ]
+  },
+  "Orc": {
+    "description": "This subtype is applied to orcs and creatures who are related to orcs. (See Species)",
+    "reference": "Alien Archive 2 pg. 137, Alien Archive pg. 136",
+    "trait": [],
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft."
+      },
+      {
+        "npcOtherAbilities": "ferocity universal creature rule"
+      }
+    ]
+  },
+  "Pahtra": {
+    "description": "This subtype is applied to pahtras and creatures related to pahtras. (See species)",
+    "reference": "Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft.; low-light vision"
+      }
+    ]
+  },
+  "Phentomite": {
+    "description": "This subtype is applied to phentomites and creatures related to phentomites. (see species)",
+    "reference": "Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft."
+      }
+    ]
+  },
+  "Plantlike": {
+    "description": "Plantlike creatures have many of the characteristics of plants.",
+    "reference": "Alien Archive 3 pg. 149, Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Most plantlike creatures have the plantlike universal creature rule"
+      }
+    ]
+  },
+  "Protean": {
+    "description": "Proteans are serpentine outsiders of pure chaos native to the Maelstrom.",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": " Blindsense (distance and sense varies by protean type)"
+      },
+      {
+        "npcImmunities": "immunity to acid"
+      },
+      {
+        "npcResistances": "resistance 10 to electricity and sonic"
+      },
+      {
+        "npcOtherAbilities": "supernatural flight speed; amorphous; change shape; grab ability with its natural attacks."
+      }
+    ]
+  },
+  "Pyric Revenant": {
+    "description": "Pyric fire can turn a creature into a pyric revenant. (requires type Undead, Suggested Array: Combatant, Suggested Ability Scores: Strength, Dexterity.)",
+    "reference": "Starfinder #16: The Blind City pg. 60",
+    "requires": [
+      {
+        "npcType": "Undead"
+      }
+    ],
+    "adjustment": [
+      {
+        "npcImmunities": "immunity to fire"
+      },
+      {
+        "npcOtherAbilities": "Dimly illuminated, pyric fire, susceptible to water; melee attacks deal half fire damage and impart pyric curse; gains a pyric bolt ranged attack that deals fire damage; speaks Aklo and might retain one or more languages spoken in life."
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Burning Attacks": "A pyric revenant’s attacks have the burn critical hit effect that deals damage according to the creature’s CR, as follows: 3–5, 1d4; 6–10, 2d4; 11–15, 3d4; 16+ 4d4."
+        }
+      }
+    ]
+  },
+  "Pyric Wraith": {
+    "description": "A pyric revenant can eventually become a pyric wraith.",
+    "reference": "Starfinder #16: The Blind City pg. 61",
+    "trait": [],
+    "adjustment": [
+      {
+        "npcImmunities": "immunity to fire"
+      },
+      {
+        "npcOtherAbilities": "ash consumption, illuminated, pyric fire; gains a touch attack; gains a pyric ray ranged attack; attacks deal fire damage, impart pyric curse, and have the burn critical hit effect (see Burning Attacks); speaks Aklo and might retain one or more languages spoken in life."
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Burning Attacks": "A pyric Wraith’s attacks have the burn critical hit effect that deals damage according to the creature’s CR, as follows: 3–5, 1d4; 6–10, 2d4; 11–15, 3d4; 16+ 4d4."
+        }
+      }
+    ]
+  },
+  "Reptoid": {
+    "description": "This subtype is applied to the shapechanging aliens known as reptoids and creatures related to reptoids. (see species)",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": "low-light vision"
+      }
+    ]
+  },
+  "Reptoid Hybrid": {
+    "description": "A reptoid hybrid is a generally outcast humanoid who resembles their reptoid parent. (reptoid, one other humanoid subtype).. Traits: As the non-reptoid humanoid. A reptoid hybrid has no reptoid traits other than their appearance.)",
+    "reference": "Starfinder #27: Deceivers’ Moon pg. 59",
+    "requires": [
+      {
+        "npcType": "Humanoid"
+      }
+    ]
+  },
+  "Ryphorian": {
+    "description": "This subtype is applied to ryphorians and creatures related to ryphorians. (See Species)",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": "low-light vision"
+      }
+    ]
+  },
+  "Sarcesian": {
+    "description": "This subtype is applied to sarcesians and creatures related to sarcesians. (see species)",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": "low-light vision"
+      }
+    ]
+  },
+  "Shakalta": {
+    "description": "This subtype is applied to shakaltas and creatures related to shakaltas. (see species)",
+    "reference": "Alien Archive 3 pg. 149",
+    "trait": [],
+    "adjustment": []
+  },
+  "Shapechanger": {
+    "description": "This subtype is applied to creatures that can dramatically alter their forms.",
+    "reference": "Alien Archive 2 pg. 137, Alien Archive pg. 136",
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Change Shape": "Source Alien Archive 2 pg. 149, Alien Archive pg. 152 The creature has the ability to assume the appearance of a specific creature or type of creature, but it retains most of its own physical qualities. If the form assumed has any of the following abilities, the creature gains them while in that form: blindsight (scent), darkvision, low-light vision, and swim 30 feet. The creature can retain its own breathing ability, or it can assume the ability to breathe in any environment the assumed shape can breathe in (including the no breath ability, which enables it to survive in the vacuum of space). If the ability does not specify what the creature can change shape into, it can assume the form of any creature of the humanoid type, but it can’t mimic a specific humanoid. Change shape grants a +10 bonus to Disguise checks to appear as a creature of the type and subtype of the new form, and the DC of the creature’s Disguise check is not modified as a result of altering major features or disguising itself as a different species or creature type.  A creature can assume a form that is one size category smaller or larger than its original form and become that size. Unless otherwise stated, it can remain in an alternate form indefinitely. Some creatures can transform into unique forms with special modifiers and abilities. These creatures adjust their ability scores, as noted in their description."
+        }
+      }
+    ]
+  },
+  "Shatori": {
+    "description": "This subtype is applied to shatoris and creatures related to shatoris. (see Species)",
+    "reference": "Alien Archive 3 pg. 149"
+  },
+  "Shimreen": {
+    "description": "This subtype is applied to shimreens and creatures related to shimreens.(See Species)",
+    "reference": "Alien Archive 3 pg. 149"
+  },
+  "Shirren": {
+    "description": "This subtype is applied to shirrens and creatures related to shirrens.",
+    "reference": "Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": " Blindsense (vibration) 30 ft."
+      }
+    ]
+  },
+  "Skittermander": {
+    "description": "This subtype is applied to skittermanders and creatures related to skittermanders.(see Species)",
+    "reference": "Alien Archive 3 pg. 149, Alien Archive pg. 136",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision;"
+      }
+    ]
+  },
+  "Spectra": {
+    "description": "Spectra are neutral outsiders native to the Drift.",
+    "reference": "Alien Archive 3 pg. 149",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "void adaptation; DR 5/chaotic, evil, good, or law (CR 8; increases to DR/10 at CR 13, increases to DR/15 at CR 18); machine telepathy (see below); truespeech; slip drive; spaceflight (Mysticism)"
+      },
+      {
+        "npcImmunities": "Immunity to electricity"
+      },
+      {
+        "npcResistances": "resistance 5 to cold and sonic; spell resistance equal to 10 + CR"
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Machine Telepathy (Ex)": "A spectra can communicate with and through technological devices within a certain range (usually 100 feet), as well as with other creatures that have machine telepathy. A spectra can also attempt Computers and Engineering checks at this range."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Slip Drive (Ex)": "A spectra has an internal biomechanical Drift engine that allows it to travel freely between the Drift and other planes, as well as between two non-Drift planes, using the normal rules for Drift navigation. A slip drive has an effective Drift engine rating equal to the half the spectra’s CR, and a spectra need remain stationary for only 1 round (6 seconds) before engaging its slip drive."
+        }
+      }
+    ],
+    "masterSkills": [
+      "npcMyst",
+      "npcEngi",
+      "npcComp"
+    ]
+  },
+  "Strix": {
+    "description": "This subtype is applied to strix and creatures related to strix. (See species)",
+    "reference": "Alien Archive 2 pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft.;"
+      }
+    ]
+  },
+  "Swarm": {
+    "description": "This subtype is applied to any collection of Fine, Diminutive, or Tiny creatures (usually vermin) that acts as a single creature. A swarm has a single pool of Hit Points, a single initiative modifier, and a single EAC and KAC. It attempts saving throws as a single creature. A single swarm usually occupies a square (if it is made up of nonflying creatures) or a cube (if it is made up of flying creatures) 10 feet on a side, but its reach is 0 feet. A swarm can move through cracks or holes large enough for its component creatures to fit through.  In order to attack, a swarm moves into an opponent’s space, which provokes an attack of opportunity. Spellcasting or concentrating on spells within the area of a swarm requires a successful caster level check (DC = 20 + spell level). Using skills that involve patience and concentration, such as Computers, within the area of a swarm requires a successful DC 20 Will saving throw. Traits: Swarm defenses, swarm immunities, distraction, swarm attack.",
+    "reference": "Alien Archive 2 pg. 137, Alien Archive pg. 136"
+  },
+  "Troop": {
+    "description": "This subtype is applied to a collection of sentient creatures that acts as a single creature (similar to a swarm, but usually as part of a military unit). A troop has a single pool of Hit Points, a single initiative modifier, and a single EAC and KAC. A troop attempts saving throws as a single creature.  A single troop usually occupies a square (if it is made up of nonflying creatures) or a cube (if it is made up of flying creatures) 20 feet on a side, equal in size to a Gargantuan creature, though the actual size of the troop is the same as that of the component creatures. The area occupied by a troop is shapable, though the troop must remain in contiguous squares to accurately reffect the teamwork of trained military units. A troop has reach equal to that of the component creatures based on size and gear. A troop can move through squares occupied by enemies without impediment and vice versa, though such movement provokes attacks of opportunity as normal for its component creatures. A troop can move through any area large enough for its component creatures.  Because of the chaos of combat, spellcasting or concentrating on spells within the area of a troop or within its reach requires a successful caster level check (DC = 20 + spell level). Using skills that involve patience and concentration, such as Computers, within the area of a troop or within its reach requires a successful DC 20 Will saving throw.  The exact number of a troop’s component creatures varies, but in general, a troop of Small or Medium creatures consists of approximately 10 to 30 creatures. Larger creatures can form troops, but the area occupied by such a troop should increase proportionally according to the size of the component creatures (for example, a troop of Large creatures would occupy a 30-foot-square area, equal to a Colossal creature).  Although troops are composed of a number of individual creatures, not all of these creatures’ gear will survive the rigors of combat. As a result, treat a troop as a single creature for the purposes of how much treasure is awarded for an encounter with the troop, as determined by the troop’s CR on Table 11–4: Wealth Gains per Encounter on page 391 of the Starfinder Core Rulebook. Traits: Troop attack, troop defenses, troop immunities.",
+    "reference": "Starfinder #21: Huskworld pg. 60"
+  },
+  "Velstrac": {
+    "description": "Velstracs are lawful evil outsiders native to the Shadow Plane who feed on fear and pain.",
+    "reference": "Alien Archive 2 pg. 137",
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Unnerving Gaze (Su)": "This gaze ability manipulates the perceptions of those who look upon a velstrac. Unnerving gaze has a range of 30 feet and can be negated by a Will save; the exact effects vary by velstrac. All velstracs are immune to this ability. This is a mind-affecting fear effect."
+        }
+      }
+    ],
+    "adjustment": [
+      {
+        "npcImmunities": "immunity to cold"
+      },
+      {
+        "npcOtherAbilities": "regeneration 5 (suppressed by good or silver), unnerving gaze (see below)."
+      },
+      {
+        "npcSenses": "Darkvision 60 ft."
+      }
+    ]
+  },
+  "Verthani": {
+    "description": "This subtype is applied to verthani and creatures related to verthani. (See species)",
+    "reference": "Alien Archive pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision"
+      }
+    ]
+  },
+  "Vesk": {
+    "description": "This subtype is applied to vesk and creatures related to vesk. (See Species)",
+    "reference": "Alien Archive pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Low-Light Vision"
+      }
+    ]
+  },
+  "Vlaka": {
+    "description": "This subtype is applied to vlakas and other creatures related to vlakas. (see species)",
+    "reference": "Alien Archive 2 pg. 138",
+    "adjustment": [
+      {
+        "npcResistances": "Resistance 5 to cold;"
+      }
+    ]
+  },
+  "Water": {
+    "description": "This subtype is usually applied to outsiders with a connection to the Plane of Water.",
+    "reference": "Alien Archive 2 pg. 138, Alien Archive pg. 137",
+    "trait": [],
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Swim Speed"
+      }
+    ],
+    "masterSkills": [
+      "npcAthl"
+    ]
+  },
+  "Ysoki": {
+    "description": "This subtype is applied to ysoki and creatures related to ysoki. (See Species)",
+    "reference": "Alien Archive pg. 137",
+    "adjustment": [
+      {
+        "npcSenses": "Darkvision 60 ft"
+      }
+    ]
+  },
+  "Anunnaki": {
+    "description": "This subtype is applied to anunnaki and other creatures related to anunnaki. Anunnaki are a species of humanoid energy beings formed entirely of psychic energy.",
+    "reference": "Advanced Occult Guide pg. 418",
+    "adjustment": [
+      {
+        "npcSenses": "Blindsense (thought) 60 ft., darkvision 60 ft."
+      },
+      {
+        "npcOtherAbilities": "fast healing equal to CR, incorporeal; truespeech; change shape (any living creature that has species traits suitable for a PC), spaceflight (Mysticism)"
+      },
+      {
+        "npcImmunities": "immunity to disease, paralysis, poison, radiation, sleep, and staggered"
+      },
+      {
+        "npcfly": "80 feet (Su, perfect)"
+      }
+    ],
+    "specials": [
+      {
+        "npcSpecialsTemp": {
+          "Adapt ability (Ex)": "An anunnaki has environmental protections as if wearing armor with an item level equal to its CR, even while unarmored. Whenever an anunnaki attempts a saving throw and fails, they can spend 1 Resolve Point as a reaction to treat the result as a success. If the effect is an ongoing area effect, using this ability also grants the anunnaki immunity to that effect until the end of their next turn."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Disintegration (Su)": "Anunnaki are able to use their mental powers to disrupt matter, tearing it asunder. They possess two natural weapons, one melee and one ranged with five range increments of 30 feet, that deal force damage to the target based on the anunnaki’s CR."
+        }
+      },
+      {
+        "npcSpecialsTemp": {
+          "Shape Sapience (Su)": "As a full action, an anunnaki can attempt a melee attack against an opponent’s EAC, which must be a living creature or a noncreature life form (such as a common plant). If the anunnaki hits, they can radically alter their opponent’s cognitive facilities in one of the following ways. A successful Will save negates this effect. The first time after its daily preparations that an anunnaki uses this ability against a specific creature, it costs no Resolve Points; otherwise it costs 1 Resolve Point to use. » Devolution: The target is afflicted with devolution corruption (see page 280) if it wasn’t already and gain 1d8 corruption points for every 3 CR that the anunnaki has. If the target was uplifted by an anunnaki’s shape sapience, the anunnaki can instead remove all effects of that ability, reverting them to their original state. » Mnemonic Editing: The target falls unconscious for 1 hour. If the target is already unconscious, the duration of this effect resets and the anunnaki can modify a number of years of the target’s memory equal to its CR, acting as modify memory except the effect is instantaneous and can only be reversed by psychic surgery or a similarly powerful effect. Instead of modifying the target’s memory in one of the ways described by modify memory, an anunnaki can change the creature’s statistics as if using a mnemonic editor. This ability doesn’t count towards the number of times that the target can benefit from a mnemonic editor of any type. Unlike other uses of modify memory, editing a creature’s statistics takes 1 hour, at the end of which the creature’s statistics are altered. If the anunnaki is interrupted before this process is completed, the target awakens feeling disoriented but is otherwise unchanged. » Uplift: The target’s Intelligence, Wisdom and Charisma scores increase to 2d4+3, rolling separately for each ability score. If the target’s ability score (or ability modifier) is naturally higher than the result rolled, the target gains a +1d3 enhancement bonus to rolls and checks associated with that ability score instead. A common plant that’s uplifted becomes a plant creature, while animals and vermin become magical"
+        }
+      }
+    ]
+  },
+  "Deoxyomorphic": {
+    "description": "This subtype is applied to creatures that have had their genetic code altered or tampered with—sometimes willingly, sometimes unwillingly.",
+    "reference": "Advanced Occult Guide pg. 419"
+  },
+  "Kitsune": {
+    "description": "This subtype is applied to kitsune and creatures related to kitsune. Kitsune are a species of vulpine, humanoid shapeshifters that assume human form. (see species)",
+    "reference": "Advanced Occult Guide pg. 419",
+    "adjustment": [
+      {
+        "npcSenses": "Low-light vision"
+      }
+    ]
+  }
+}

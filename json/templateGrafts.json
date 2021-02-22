@@ -1,0 +1,111 @@
+{
+  "Aerial (CR 1+)": {
+    "description": "Aerial creatures are native denizens of the Elemental Plane of Air, gas giant planets, or similar landless environments, and have unique adaptations to help them survive there.",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Fly Speed equal to creatures fastest movement; Half of the damage dealt by its natural attacks becomes electricity damage; "
+      },
+      {
+        "npcNotes": "if the creature is from the Elemental Plane of Air, it gains the extraplanar subtype when it isn’t on that plane"
+      }
+    ],
+    "requires": [
+      {
+        "npcSubtype": "Air"
+      }
+    ]
+  },
+  "Aqueous (CR 1+)": {
+    "description": "Aqueous creatures are native denizens of the Elemental Plane of Water or similar landless environments, able to survive both in and out of water.",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Amphibious; natural attacks that deal bludgeoning or slashing damage deal piercing damage instead; natural attacks that deal electricity or fire damage deal cold damage instead;"
+      },
+      {
+        "npcNotes": "if the creature is from the Elemental Plane of Air, it gains the extraplanar subtype when it isn’t on that plane"
+      }
+    ],
+    "requires": [
+      {
+        "npcSubtype": "Water"
+      }
+    ]
+  },
+  "Astral": {
+    "description": "Astral creatures are natives of the Astral Plane, a vast silvery void between planes.",
+    "adjustment": [
+      {
+        "npcDR": "DR/— with a value equal to creature’s CR – 10 (minimum DR 1/—)"
+      },
+      {
+        "npcNotes": "when the creature isn’t on the Astral Plane, it gains the extraplanar subtype."
+      }
+    ]
+  },
+  "Celestial": {
+    "description": "Celestial creatures are natives of one of the good-aligned Outer Planes.",
+    "adjustment": [
+      {
+        "npcDR": "DR/evil with a value equal to creature’s CR – 10 (minimum DR 1/evil); if the creature already has DR of that value or greater, it instead gains resistance to electricity with a value equal to creature’s CR – 5 (minimum electricity resistance 1)"
+      },
+      {
+        "npcNotes": "when the creature isn’t on its home plane, it gains the extraplanar subtype."
+      }
+    ]
+  },
+  "Cthonic (CR 1+)": {
+    "description": "Cthonic creatures are native denizens of the Elemental Plane of Earth or underground environments, and they have adapted to exist in dirt and rock.",
+    "adjustment": [
+      {
+        "npcOtherAbilities": "Blindsense (vibration) if CR 7 or less, and blindsight (vibration) if CR 8 or greater (in either case, with a range equal to creature’s burrow speed); natural melee attacks bypass DR/cold iron;"
+      },
+      {
+        "npcNotes": "if the creature is from the Elemental Plane of Earth, it gains the extraplanar subtype when it isn’t on that plane."
+      }
+    ]
+  },
+  "Cybernetic (CR 1/2+)": {
+    "description": "",
+    "adjustment": []
+  },
+  "Entropic": {
+    "description": "",
+    "adjustment": []
+  },
+  "Fiendish": {
+    "description": "",
+    "adjustment": []
+  },
+  "Fiery (CR 1+)": {
+    "description": "",
+    "adjustment": []
+  },
+  "Giant (CR 1+)": {
+    "description": "",
+    "adjustment": []
+  },
+  "Miniature": {
+    "description": "",
+    "adjustment": []
+  },
+  "Phrenic": {
+    "description": "",
+    "adjustment": []
+  },
+  "Resolute": {
+    "description": "",
+    "adjustment": []
+  },
+  "Synthetic": {
+    "description": "",
+    "adjustment": []
+  },
+  "Two-Headed (CR 3+)": {
+    "description": "",
+    "adjustment": []
+  },
+  "Umbral": {
+    "description": "",
+    "adjustment": []
+  }
+}

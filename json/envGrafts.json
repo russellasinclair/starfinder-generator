@@ -1,0 +1,58 @@
+{
+  "Airborne": {
+    "description": "",
+    "adjustment": []
+  },
+  "Aquatic": {
+    "description": "",
+    "adjustment": []
+  },
+  "Arboreal": {
+    "description": "",
+    "adjustment": []
+  },
+  "Arctic": {
+    "description": "",
+    "adjustment": []
+  },
+  "Desert": {
+    "description": "",
+    "adjustment": []
+  },
+  "Forest": {
+    "description": "",
+    "adjustment": []
+  },
+  "Marsh": {
+    "description": "",
+    "adjustment": []
+  },
+  "Mountain": {
+    "description": "",
+    "adjustment": []
+  },
+  "Plains": {
+    "description": "",
+    "adjustment": []
+  },
+  "Radioactive": {
+    "description": "",
+    "adjustment": []
+  },
+  "Solar": {
+    "description": "",
+    "adjustment": []
+  },
+  "Space": {
+    "description": "",
+    "adjustment": []
+  },
+  "Subterranean": {
+    "description": "",
+    "adjustment": []
+  },
+  "Thermic": {
+    "description": "",
+    "adjustment": []
+  }
+}
