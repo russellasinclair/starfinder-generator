@@ -1,9 +1,17 @@
+"use strict";
+
 let currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
 const NPC_ARRAY = 0;
 const NPC_TYPE = 1;
 const NPC_GRAFTS = 2;
+
+let typeDropdown = $("#type-dropdown");
+let subtypeDropdown = $("#subtype-dropdown");
+let classGraftDropdown = $("#class-graft-dropdown");
+let templateGraftDropdown = $("#template-graft-dropdown");
+let whichGraftDropdown = $("#which-template-dropdown");
 
 function debugLog(text) {
     console.log(text);
@@ -18,11 +26,12 @@ function showTab(n) {
         document.getElementById("nextBtn").style.display = "none";
     }
     fixStepIndicator(n);
+    document.getElementById("debug").innerText = JSON.stringify(data.npcData);
 }
 
+/// Next Button Code. Triggers logic processing.
 function nextPrev(n) {
     let x = document.getElementsByClassName("tab");
-
     // Leaving FIRST TAB
     if (currentTab === NPC_ARRAY) {
         getStats(data.npcData.npcArray, data.npcData.npcCR);
@@ -32,38 +41,50 @@ function nextPrev(n) {
             $.each(data, function (key) {
                 items.push("<option id='" + key + "'>" + key + "</option>");
             });
-            $("#type-dropdown").append(items);
+            typeDropdown.append(items);
         });
         $.getJSON("json/subtypes.json", function (data) {
             let items = [];
             $.each(data, function (key) {
                 items.push("<option id='" + key + "'>" + key + "</option>");
             });
-            $("#subtype-dropdown").append(items);
+            subtypeDropdown.append(items);
         });
         // LEAVING SECOND TAB
     } else if (currentTab === NPC_TYPE) {
-        data.npcData.npcType =  $("#type-dropdown").val();
-        data.npcData.npcSubtype = $("#subtype-dropdown").val();
-        parseData("json/types.json", $("#type-dropdown").val(), "npcTypeDetails");
-        parseData("json/subtypes.json", $("#subtype-dropdown").val(), "npcSubtypeDetails");
+        data.npcData.npcType = typeDropdown.val();
+        data.npcData.npcSubtype = subtypeDropdown.val();
+        parseData("json/types.json", typeDropdown.val(), "npcTypeDetails");
+        parseData("json/subtypes.json", subtypeDropdown.val(), "npcSubtypeDetails");
+        typeDropdown.empty();
+        subtypeDropdown.empty();
+
         $.getJSON("json/classes.json", function (data) {
             let items = [];
             $.each(data, function (key) {
                 items.push("<option id='" + key + "'>" + key + "</option>");
             });
-            $("#class-graft-dropdown").append(items);
+            classGraftDropdown.append(items);
         });
-        $.getJSON("json/templateGrafts.json", function (data) {
-            let items = [];
-            $.each(data, function (key) {
-                items.push("<option id='" + key + "'>" + key + "</option>");
-            });
-            $("#template-graft-dropdown").append(items);
-        });
-    // LEAVING THIRD TAB
+        // LEAVING THIRD TAB
     } else if (currentTab === NPC_GRAFTS) {
-        debugLog("");
+        if (!classGraftDropdown.val().includes("optional")) {
+            parseData("json/classes.json", classGraftDropdown.val(), "npcClassDetails");
+        }
+        classGraftDropdown.empty();
+        if (whichGraftDropdown.val().includes("Elemental")) {
+            parseData("json/elementalGrafts.json", templateGraftDropdown.val(), "npcGraftDetails");
+        } else if (whichGraftDropdown.val().includes("Environmental")) {
+            parseData("json/envGrafts.json", templateGraftDropdown.val(), "npcGraftDetails");
+        } else if (whichGraftDropdown.val().includes("Occult")) {
+            parseData("json/occultGrafts.json", templateGraftDropdown.val(), "npcGraftDetails");
+        } else if (whichGraftDropdown.val().includes("Simple")) {
+            parseData("json/otherGrafts.json", templateGraftDropdown.val(), "npcGraftDetails");
+        } else if (whichGraftDropdown.val().includes("Summoning")) {
+            parseData("json/summoningGrafts.json", templateGraftDropdown.val(), "npcGraftDetails");
+        }
+        templateGraftDropdown.empty();
+
     }
 
     x[currentTab].style.display = "none";
@@ -71,11 +92,46 @@ function nextPrev(n) {
     showTab(currentTab);
 }
 
+function loadGrafts() {
+    let expression = parseFloat($("#which-template-dropdown").find('option:selected').attr('id'));
+    templateGraftDropdown.empty();
+    let template = "";
+    debugLog("Load Grafts called = " + expression);
+    switch (expression) {
+        case 4:
+            template = "json/templateGrafts.json";
+            break;
+        case 1:
+            template = "json/elementalGrafts.json";
+            break;
+        case 2:
+            template = "json/envGrafts.json";
+            break;
+        case 3:
+            template = "json/occultGrafts.json";
+            break;
+        case 5:
+            template = "json/summoningGrafts.json";
+            break;
+        default:
+            return;
+    }
+
+    $.getJSON(template, function (data) {
+        let items = [];
+        $.each(data, function (key) {
+            console.log(key);
+            items.push("<option id='" + key + "'>" + key + "</option>");
+        });
+        templateGraftDropdown.append(items);
+    });
+}
+
 function parseData(filename, graftName, details) {
-     $.getJSON(filename, function (data) {
-         console.log(data);
-         genericUpdateData(data[graftName], details);
-     });
+    $.getJSON(filename, function (data) {
+        console.log(data);
+        genericUpdateData(data[graftName], details);
+    });
 }
 
 function fixStepIndicator(n) {
@@ -84,7 +140,7 @@ function fixStepIndicator(n) {
         x[i].className = x[i].className.replace(" active", "");
     }
 
-    if(x[n].className === undefined) {
+    if (x[n].className === undefined) {
         x[n].className = "";
     }
     x[n].className += " active";
@@ -132,11 +188,14 @@ function updateAbilityScores() {
     debugLog("Ability Score 3 = " + data.npcData.npcAbilityScore3);
 }
 
-
 function genericUpdateData(details, fullData) {
     debugLog("Details = " + details + " : fullData = " + fullData);
 
     data.npcData[fullData] = details;
+    if (details.adjustment === undefined) {
+        return;
+    }
+
     for (let i in details.adjustment) {
         debugLog("adjustment = " + details.adjustment);
         let stat = Object.getOwnPropertyNames(details.adjustment[i])[0];

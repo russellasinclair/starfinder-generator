@@ -59,7 +59,9 @@
 
     <div class="tab">
         <p><b>Creature Type Graft:</b></p>
-        <p><select id="type-dropdown" name="type" oninput="this.className = ''"></select></p>
+        <p><select id="type-dropdown" name="type" oninput="this.className = ''">
+            <option>Select a Type</option>
+        </select></p>
         <p>The first graft—a set of adjustments—you apply to your NPC
             gives it attributes that reflect the base kind of creature it is,
             such as animal, humanoid, or undead. This and other grafts
@@ -69,6 +71,7 @@
             ones granted by its creature type graft.</p>
         <p><b>Creature Subtype Graft:</b></p>
         <p><select id="subtype-dropdown" name="subtype" oninput="this.className = ''">
+            <option>Select a Subtype</option>
         </select></p><p>If the NPC has any subtypes, add those now. Many subtypes
         don’t grant additional abilities, but they are important for
         interactions with other rules.</p>
@@ -77,14 +80,25 @@
     <div class="tab">
         <p><b>Creature Class Graft (optional):</b></p>
         <p><select id="class-graft-dropdown" name="class-graft" oninput="this.className = ''">
+            <option>Select a Class (optional)</option>
         </select></p><p>If you’re making an NPC who functions as a character with
         a class, you can give it a class graft. The class graft gives
         it abilities based on the relevant class’s abilities, but which
         abilities the NPC gains is determined by its CR rather than by
         a class level. Some class graft adjustments can replace ones
         from its creature type graft (see Step 2).</p>
+        <p><b>Template Graft Types (optional):</b></p>
+        <p><select id="which-template-dropdown" name="which-graft" onchange="loadGrafts()">
+            <option>Select a template group (optional)</option>
+            <option id="1">Elemental Grafts</option>
+            <option id="2">Environmental Grafts</option>
+            <option id="3">Occult Grafts</option>
+            <option id="4">Simple Grafts</option>
+            <option id="5">Summoning Grafts</option>
+        </select></p><p>If you wish to select a Creature Template Graft, choose which type of
+        template you'd like to select from</p>
         <p><b>Creature Template Graft (optional):</b></p>
-        <p><select id="template-graft-dropdown" name = "template-graft" oninput="this.className = ''">
+        <p><select id="template-graft-dropdown" name = "template-graft">
         </select></p><p>If you would like the NPC to have a template, apply it now.</p>
     </div>
 
@@ -119,8 +133,6 @@
     </p>
     </div>
 
-
-
     <div style="overflow:auto;">
         <div style="float:right;">
             <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
@@ -136,6 +148,10 @@
     </div>
 
 </form>
+
+<div id="debug"></div>
+
+
 <script src="./js/arrays.js"></script>
 <script src="./js/sizeChart.js"></script>
 <script src="./js/xp.js"></script>
