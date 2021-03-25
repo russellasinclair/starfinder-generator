@@ -1,17 +1,22 @@
 "use strict";
 
+var data = {};
+data.npcData = {};
+
 let currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
 const NPC_ARRAY = 0;
 const NPC_TYPE = 1;
 const NPC_GRAFTS = 2;
+const NPC_ABILITIES = 3;
 
 let typeDropdown = $("#type-dropdown");
 let subtypeDropdown = $("#subtype-dropdown");
 let classGraftDropdown = $("#class-graft-dropdown");
 let templateGraftDropdown = $("#template-graft-dropdown");
 let whichGraftDropdown = $("#which-template-dropdown");
+let whichAbilitiesDropdown = $("#which-special-abilities-dropdown");
 
 function debugLog(text) {
     console.log(text);
@@ -52,13 +57,6 @@ function nextPrev(n) {
         });
         // LEAVING SECOND TAB
     } else if (currentTab === NPC_TYPE) {
-        data.npcData.npcType = typeDropdown.val();
-        data.npcData.npcSubtype = subtypeDropdown.val();
-        parseData("json/types.json", typeDropdown.val(), "npcTypeDetails");
-        parseData("json/subtypes.json", subtypeDropdown.val(), "npcSubtypeDetails");
-        typeDropdown.empty();
-        subtypeDropdown.empty();
-
         $.getJSON("json/classes.json", function (data) {
             let items = [];
             $.each(data, function (key) {
@@ -66,8 +64,23 @@ function nextPrev(n) {
             });
             classGraftDropdown.append(items);
         });
+
+        data.npcData.npcType = typeDropdown.val();
+        data.npcData.npcSubtype = subtypeDropdown.val();
+        parseData("json/types.json", typeDropdown.val(), "npcTypeDetails");
+        parseData("json/subtypes.json", subtypeDropdown.val(), "npcSubtypeDetails");
+        typeDropdown.empty();
+        subtypeDropdown.empty();
         // LEAVING THIRD TAB
     } else if (currentTab === NPC_GRAFTS) {
+        $.getJSON("json/abilities.json", function (data) {
+            let items = [];
+            $.each(data, function (key, element) {
+                items.push("<option id='" + key + "'>" + key + "</option>");
+            });
+            whichAbilitiesDropdown.append(items);
+        });
+
         if (!classGraftDropdown.val().includes("optional")) {
             parseData("json/classes.json", classGraftDropdown.val(), "npcClassDetails");
         }
@@ -84,7 +97,9 @@ function nextPrev(n) {
             parseData("json/summoningGrafts.json", templateGraftDropdown.val(), "npcGraftDetails");
         }
         templateGraftDropdown.empty();
+    } else if (currentTab === NPC_ABILITIES) {
 
+        //whichGraftDropdown.empty();
     }
 
     x[currentTab].style.display = "none";
@@ -93,7 +108,7 @@ function nextPrev(n) {
 }
 
 function loadGrafts() {
-    let expression = parseFloat($("#which-template-dropdown").find('option:selected').attr('id'));
+    let expression = parseFloat(whichGraftDropdown.find('option:selected').attr('id'));
     templateGraftDropdown.empty();
     let template = "";
     debugLog("Load Grafts called = " + expression);
@@ -217,6 +232,7 @@ function genericUpdateData(details, fullData) {
     }
     for (let i in details.specials) {
         debugLog("Specials = " + details.specials);
+        data.npcData.npcSpecialsTemp = {};
         let stat = Object.getOwnPropertyNames(
             details.specials[i].npcSpecialsTemp)[0];
         data.npcData.npcSpecialsTemp.name = stat;
@@ -242,6 +258,10 @@ function genericUpdateData(details, fullData) {
 }
 
 function addAbility() {
+    if(data.npcData.npcSpecials === undefined) {
+        data.npcData.npcSpecials = [];
+    }
+
     if (data.npcData.npcSpecialsTemp.name !== "" &&
         data.npcData.npcSpecialsTemp.description !== "") {
         data.npcData.npcSpecials.push({
